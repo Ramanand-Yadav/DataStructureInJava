@@ -1,11 +1,11 @@
-class GCD{
+public class GCD{
     public static void main(String[] args){
         System.out.println("Rama");
-        System.out.println(GCD(18, 24));
+        System.out.println(GCD1(18, 24));
     }
 
 
-    private static int GCD(int m, int n){
+    private static int GCD1(int m, int n){
         
         if(m>n){ // 6, 5
             n = m+n; //11
@@ -15,7 +15,7 @@ class GCD{
         if(m==0){
             return n;
         }else{
-            return GCD(m, n%m);
+            return GCD1(m, n%m);
         }
     }
 }
