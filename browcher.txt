@@ -1,1 +1,5 @@
-hey find out the brocher. mention here. hello added new comment
+1. Array 
+    1.1 Easy 
+        Problem : 
+            01 https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/
+            02 
