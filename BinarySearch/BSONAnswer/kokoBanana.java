@@ -4,7 +4,7 @@ public class kokoBanana {
     public static void main(String[] args) {
         
     }
-    public int minEatingSpeed(int[] piles, int h) {
+    public int minEatingSpeed1(int[] piles, int h) {
         int maxEle = piles[0];
         int n = piles.length;
         for(int i=0; i<n; i++){
