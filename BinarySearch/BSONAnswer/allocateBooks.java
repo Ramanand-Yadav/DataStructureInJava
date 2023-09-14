@@ -6,7 +6,8 @@ public class allocateBooks {
         ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(25, 46, 28, 49, 24));
         int n = 5;
         int m = 4;
-        int ans = findPages(arr, n, m);
+        // int ans = findPages(arr, n, m);
+        int ans = solve(arr, n, m);
         System.out.println("The answer is: " + ans);
     }
 
@@ -31,9 +32,17 @@ public class allocateBooks {
         int r = arr.stream().mapToInt(Integer::intValue).sum();
 
         if(m>n) return -1;
-        for(int i=l; i<=r; i++){
-            if(countStudents(arr,i)==m){
-                return i;
+        // for(int i=l; i<=r; i++){
+        //     if(countStudents(arr,i)==m){
+        //         return i;
+        //     }
+        // }
+        while(l<=r){
+            int mid = (l+r)/2;
+            if(countStudent(arr, n, mid)<=m){
+                r = mid-1;
+            }else{
+                l = mid+1;
             }
         }
         return l;
