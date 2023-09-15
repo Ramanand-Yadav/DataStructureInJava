@@ -19,10 +19,25 @@ public class splitLargestSumArray {
             l = Math.max(l, arr[i]);
         }
         int r = sum;
+        //1st Approach
+        /*
         for(int minsum = l; minsum<=r; minsum++){
             int subarray = cntSubArray(arr, minsum, n);
             if(subarray==k){
                 return minsum;
+            }
+        }
+        return l;
+        */
+
+        //2nd Approach
+        while(l<=r){
+            int mid = (l+r)/2;
+            int cnt = cntSubArray(arr, mid, n);
+            if(cnt<=k){
+                r = mid-1;
+            }else{
+                l = mid+1;
             }
         }
         return l;
