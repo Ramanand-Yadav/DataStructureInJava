@@ -92,9 +92,9 @@ class Solution {
 }
 public class missingRepeat {
     public static void main(String[] args) {
-        int[]arr = {2, 3,4};
-        Solution t = new Solution();
-        int[] arr2 = t.findMissingRepeatingNumbers(arr);
+        // int[]arr = {2, 3,4};
+        // Solution t = new Solution();
+        // int[] arr2 = t.findMissingRepeatingNumbers(arr);
     }
 
     // private static int[] findMissingRepeatingNumbers(int[] arr) {
