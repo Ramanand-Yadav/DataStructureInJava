@@ -1,3 +1,4 @@
+package Arrays.Medium;
 import java.util.*;
 public class countSubArraySum {
     public static void main(String[] args) {

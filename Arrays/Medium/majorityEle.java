@@ -1,3 +1,4 @@
+package Arrays.Medium;
 public class majorityEle {
     public static void main(String[] args) {
         int[] arr = {3,2,3};

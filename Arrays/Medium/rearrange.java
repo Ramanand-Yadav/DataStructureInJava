@@ -1,3 +1,5 @@
+package Arrays.Medium;
+import java.util.*;
 public class rearrange {
     static int p;
     static int n;
@@ -65,5 +67,5 @@ public class rearrange {
     }
     
 }
-4
-[[0,0,5],[3,3,1],[1,2,5],[0,0,7]]
+// 4
+// [[0,0,5],[3,3,1],[1,2,5],[0,0,7]]

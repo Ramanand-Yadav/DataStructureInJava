@@ -4,7 +4,7 @@ import java.util.*;
 
 public class sum3 {
     public static void main(String[] args) {
-        setChecking();
+        // setChecking();
     }
     private static List<List<Integer>> BruteForce(int[] nums) {
         Set<List<Integer>> al = new HashSet<>();
@@ -43,7 +43,7 @@ public class sum3 {
         List<List<Integer>> ans = new ArrayList<>(al);
         return ans;
     }
-
+/* 
     private static List<List<Integer>> optimal(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
         Arrays.sort(nums);
@@ -71,5 +71,6 @@ public class sum3 {
         }
         return ans;
     }
+    */
     
 }
