@@ -6,20 +6,6 @@ public class SortedRotatedArray {
         boolean val = check2(new int[]{2,1,3,4,5});
         System.out.println(val);
     }
-    private static boolean check(int[] nums) {
-        int cnt = 0;
-        int i;
-        for(i=0; i<nums.length-1; i++){
-            if(nums[i]>nums[i+1]){
-                cnt++;
-            }
-        }
-        if(nums[i]>nums[0]){
-            cnt++;
-        }
-        if(cnt>1) return false;
-        return true;
-    }
     private static boolean check2(int[] nums){
         int[] arr = new int[nums.length];
         Arrays.fill(arr,0);
