@@ -6,7 +6,7 @@ public class findSmallestDivisor {
     }
     public int smallestDivisor(int[] nums, int threshold) {
         int maxe = Integer.MIN_VALUE;
-        int ans = Integer.MAX_VALUE;
+        // int ans = Integer.MAX_VALUE;
         for(int i=0; i<nums.length; i++){
             maxe = Math.max(nums[i], maxe);
         }

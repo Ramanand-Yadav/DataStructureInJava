@@ -4,11 +4,12 @@ public class binarySearch {
     public static void main(String[] args) {
         int[] arr = {1, 2, 5};
         int n = 3;
-        binarySearch(arr, 0, n-1, 5);
+        // binarySearch(arr, 0, n-1, 5);
         binarySearch1(arr, 0, n-1, 5);
         binarySearch2(arr, 0, n-1, 5);
+        // binarySearch(arr, 0,n-1, 6);
     }
-
+/* 
     private static int binarySearch(int[] arr, int low, int high, int target){
         if(low>high) return -1;
         int mid = (low+high)/2;
@@ -17,6 +18,7 @@ public class binarySearch {
             return binarySearch(arr, low, mid-1, target);
         }else return binarySearch(arr, mid+1, high, target);
     }
+    */
 
     private static int binarySearch1(int[] nums, int low, int high, int target){
         for(int i=0; i<nums.length; i++){

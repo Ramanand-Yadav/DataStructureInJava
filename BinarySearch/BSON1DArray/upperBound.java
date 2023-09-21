@@ -4,6 +4,7 @@ public class upperBound {
     public static void main(String[] args) {
         
     }
+    /* 
     public static int upperBound(int []arr, int x, int n){
         // Write your code here.
         int low = 0;
@@ -28,4 +29,5 @@ public class upperBound {
         }
         return arr.length;
     }
+    */
 }

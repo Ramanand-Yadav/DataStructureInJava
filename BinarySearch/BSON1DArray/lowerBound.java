@@ -4,7 +4,7 @@ public class lowerBound {
     public static void main(String[] args) {
         
     }
-
+/* 
     private static int binarySearch(int[] arr, int low, int high, int x, int ans){
         if(low>high){
             if(ans==Integer.MAX_VALUE){
@@ -53,4 +53,5 @@ public class lowerBound {
         if(ans == Integer.MAX_VALUE) return arr.length;
         else return ans;
     }
+    */
 }

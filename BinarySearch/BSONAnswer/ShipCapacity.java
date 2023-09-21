@@ -1,6 +1,5 @@
 package BinarySearch.BSONAnswer;
-import java.util.* ;
-import java.io.*; 
+
 public class ShipCapacity {
     public static void main(String[] args) {
         
