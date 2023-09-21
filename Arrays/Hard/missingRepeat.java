@@ -1,7 +1,7 @@
 package Arrays.Hard;
 // import java.util.*;
 
-
+/* 
 class Solution {
     public static int[] findMissingRepeatingNumbers(int []a) {
         // Write your code here
@@ -42,7 +42,7 @@ class Solution {
         long y = x-val1;
         int[] ans = {(int)x, (int)y};
         return ans;
-        */
+        
         int n = a.length; 
         //size of the array
         int xr = 0;
@@ -90,6 +90,7 @@ class Solution {
 
     }
 }
+*/
 public class missingRepeat {
     public static void main(String[] args) {
         // int[]arr = {2, 3,4};

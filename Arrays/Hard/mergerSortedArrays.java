@@ -1,11 +1,12 @@
 package Arrays.Hard;
-import java.util.*;
+// import java.util.*;
 
 public class mergerSortedArrays {
     public static void main(String[] args) {
         
     }
 }
+/* 
 class Solution {
     public static void mergeTwoSortedArraysWithoutExtraSpace(long []a, long []b){
         // Write your code here.
@@ -70,3 +71,4 @@ class Solution2 {
         }
     }
 }
+*/

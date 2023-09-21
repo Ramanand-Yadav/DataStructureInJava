@@ -1,11 +1,12 @@
 package Arrays.Hard;
-import java.util.*;
+// import java.util.*;
 public class numberOfInversion {
     public static void main(String[] args) {
         
     }
     
 }
+/* 
 class Solution {
     public static int numberOfInversions(int []a, int n) {
         // Write your code here.
@@ -57,3 +58,5 @@ class Solution {
         return cnt;
     }
 }
+
+*/

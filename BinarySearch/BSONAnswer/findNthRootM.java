@@ -5,6 +5,7 @@ public class findNthRootM {
         
     }
 }
+/* 
 class Solution {
     public static int NthRoot(int n, int m) {
         // Write your code here.
@@ -33,3 +34,4 @@ class Solution {
         return (int) Math.pow(base, num);
     }
 }
+*/

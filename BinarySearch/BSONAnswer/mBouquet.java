@@ -4,7 +4,8 @@ public class mBouquet {
     public static void main(String[] args) {
         
     }
-
+}
+/* 
     public static int roseGarden1(int[] arr, int k, int m) {
         long val = (long) m * k;
         int n = arr.length; // Size of the array
@@ -75,3 +76,4 @@ class Solution {
         return nofb>=m;
     }
 }
+*/

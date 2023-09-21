@@ -1,11 +1,12 @@
 package BinarySearch.BSONAnswer;
-import java.util.ArrayList;
+// import java.util.ArrayList;
 
 public class painterPartition {
     public static void main(String[] args) {
         
     }
 }
+/* 
 class Solution 
 {
     public static int findLargestMinDistance(ArrayList<Integer> boards, int k)
@@ -43,3 +44,4 @@ class Solution
         return cnt;
     }
 }
+*/

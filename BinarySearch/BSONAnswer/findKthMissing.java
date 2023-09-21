@@ -5,7 +5,7 @@ public class findKthMissing {
         
     }
 }
-
+/* 
 class Solution {
     public static int missingK(int[] vec, int n, int k) {
         // Write your code here.
@@ -20,3 +20,4 @@ class Solution {
         return l+k;
     }
 }
+*/
