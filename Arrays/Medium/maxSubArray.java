@@ -1,7 +1,8 @@
 package Arrays.Medium;
 public class maxSubArray {
     public static void main(String[] args) {
-        
+        int[] arr = {1, 2, 4};
+        Kadane(arr);
     }
 
     private static int Kadane(int[] arr){

@@ -11,6 +11,7 @@ public class setMatrixZero {
             }
             System.out.println();
         }
+        setZerosOptimal(arr);
     }
     private static void setZerosOptimal(int[][] arr){
         int n = arr.length;

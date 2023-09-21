@@ -1,6 +1,5 @@
 package Arrays.Medium;
-import java.util.*;
-import java.util.Arrays;
+
 
 public class nextPermutation {
     public static void main(String[] args) {
@@ -8,7 +7,9 @@ public class nextPermutation {
         int[] arr2 = sovle(arr);
         for(int val : arr2){
             System.out.print(val+" ");
-        }
+        };
+        reverse(arr2);
+        reverseInNewArray(arr);
     }
     private static int[] sovle(int[] arr){
         int ind = -1;

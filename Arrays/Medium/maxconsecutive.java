@@ -1,10 +1,5 @@
 package Arrays.Medium;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class maxconsecutive {
     public static void main(String[] args) {
@@ -13,6 +8,7 @@ public class maxconsecutive {
         int val = longestConsecutive(arr);
         System.out.println(val);
         System.out.println(longestConsecutive(arr));
+        solve(arr);
     }
     public static int longestConsecutive(int[] nums) {
         Set<Integer> set = new HashSet<Integer>();

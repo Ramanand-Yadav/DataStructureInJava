@@ -1,11 +1,11 @@
 package Arrays.Medium;
-import java.util.*;
+// import java.util.*;
 public class rearrange {
     static int p;
     static int n;
     public static void main(String[] args) {
         int[] arr = {28,-41,22,-8,-37,46,35,-9,18,-6,19,-26,-37,-10,-9,15,14,31};
-        int[] arr2 = rearrangeArray(arr);
+        rearrangeArray(arr);
     }
     private static int[] rearrangeArray(int[] nums) {
         p=setPositive(nums,0);
@@ -67,5 +67,4 @@ public class rearrange {
     }
     
 }
-// 4
-// [[0,0,5],[3,3,1],[1,2,5],[0,0,7]]
+
