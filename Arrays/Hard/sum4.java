@@ -1,12 +1,12 @@
 package Arrays.Hard;
 
-import java.util.*;
+// import java.util.*;
 
 public class sum4 {
     public static void main(String[] args) {
         
     }
-
+/* 
     private static List<List<Integer>> optimal(int[] nums, int target){
         List<List<Integer>> ans = new ArrayList<>();
         Arrays.sort(nums);
@@ -76,4 +76,5 @@ public class sum4 {
         List<List<Integer>> ans = new ArrayList<>(set);
         return ans;
     }
+    */
 }

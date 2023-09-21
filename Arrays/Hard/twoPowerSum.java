@@ -1,11 +1,10 @@
 package Arrays.Hard;
 
-import java.util.*;
 
 public class twoPowerSum {
+/* 
     public static void main(String[] args) {
         List<Integer> inpu = Arrays.asList(1,2,8);
-        int target = 7;
         long t2 = 7;
         Set<Integer> set = block(t2);
         List<Integer> al = new ArrayList<>(set);
@@ -63,5 +62,5 @@ public class twoPowerSum {
         }
         return ans;
     }
-    
+    */
 }

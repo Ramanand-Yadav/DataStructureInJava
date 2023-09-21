@@ -1,11 +1,12 @@
 package Arrays.Hard;
 
-import java.util.*;
+// import java.util.*;
 
 public class sum3 {
     public static void main(String[] args) {
         // setChecking();
     }
+    /* 
     private static List<List<Integer>> BruteForce(int[] nums) {
         Set<List<Integer>> al = new HashSet<>();
         int n = nums.length;
@@ -43,7 +44,7 @@ public class sum3 {
         List<List<Integer>> ans = new ArrayList<>(al);
         return ans;
     }
-/* 
+
     private static List<List<Integer>> optimal(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
         Arrays.sort(nums);
