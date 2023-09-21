@@ -2,8 +2,10 @@ package SortingTecnique.Sorting_01;
 
 public class bubbleSort {
     public static void main(String[] args) {
-        bubbleSort(new int[]{41,467,334,500,169,724,478,358,962,464},10);
+        // int[] arr = {41,467,334,500,169,724,478,358,962,464};
+        // bubbleSort(arr, 10);
     }
+    /* 
     public static void bubbleSort(int[] arr, int n) {
         //Your code goes here
         for(int i=n-1; i>=0; i--){
@@ -21,4 +23,5 @@ public class bubbleSort {
             }
         }
     }
+    */
 }
