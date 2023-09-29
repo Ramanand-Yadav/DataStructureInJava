@@ -1,6 +1,9 @@
 package LinkedList.MediumProblemLL;
 
-public class firstNode {
+import java.util.HashSet;
+import java.util.Set;
+
+public class findeIntersection {
     class ListNode {
         int val;
         ListNode next;
@@ -31,23 +34,19 @@ public class firstNode {
     public static void main(String[] args) {
         
     }
-    /* 
-    public static Node firstNode(Node head) {
-        if(head==null || head.next==null) return null;
-        if(head.next==head) return head;
-        Node slow = head.next;
-        Node fast = head.next.next;
-        while(fast!=null && fast.next!=null && slow!=fast){
-            fast = fast.next.next;
-            slow = slow.next;
-        } 
-        if(fast==null || fast.next==null) return null;
-        slow = head;
-        while(fast!=slow){
-            slow = slow.next;
-            fast = fast.next;
+    public static int findIntersection(Node firstHead, Node secondHead) {
+        //Write your code here
+        Set<Node> set = new HashSet<>();
+        Node temp = firstHead;
+        while(temp!=null){
+            set.add(temp);
+            temp = temp.next;
         }
-        return slow;
+        temp = secondHead;
+        while(temp!=null){
+            if(set.contains(temp)) return temp.data;
+            temp = temp.next;
+        }
+        return -1;
     }
-    */
 }
