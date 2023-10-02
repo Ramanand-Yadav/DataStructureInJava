@@ -1,6 +1,14 @@
 package LinkedList.MediumProblemLL;
 
 public class countLoopNode {
+    class ListNode {
+        int val;
+        ListNode next;
+        ListNode() {}
+        ListNode(int val) { this.val = val; }
+        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    }
+    
     class Node {
         public int data;
         public Node next;
