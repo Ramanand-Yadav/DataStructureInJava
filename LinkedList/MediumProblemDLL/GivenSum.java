@@ -30,28 +30,30 @@ public class GivenSum {
         }
     }
     public static void main(String[] args){
-        Scanner scn = new Scanner(System.in);
-        System.out.println("Inter Numbers of Node in LinkList");
-        int n = scn.nextInt();
-        int[] arr = new int[n];
-        System.out.println("Enter the "+n+" value");
+        try (Scanner scn = new Scanner(System.in)) {
+            System.out.println("Inter Numbers of Node in LinkList");
+            int n = scn.nextInt();
+            int[] arr = new int[n];
+            System.out.println("Enter the "+n+" value");
 
-        for(int i=0; i<n; i++){
-            arr[i] = scn.nextInt();
+            for(int i=0; i<n; i++){
+                arr[i] = scn.nextInt();
+            }
+            
+            Node head = createLinkList(arr,n);
+            System.out.println("head of LinkList : "+head.data);
+            Node temp = head;
+            while(temp!= null){
+                System.out.print(temp.data);
+                if(temp.next!=null) System.out.print("->");
+                temp = temp.next;
+            }
+            System.out.println();
+            System.out.println("Enter the value of K : ");
+            int k = scn.nextInt();
+            PairWithSum(head,k);
         }
         
-        Node head = createLinkList(arr,n);
-        System.out.println("head of LinkList : "+head.data);
-        Node temp = head;
-        while(temp!= null){
-            System.out.print(temp.data);
-            if(temp.next!=null) System.out.print("->");
-            temp = temp.next;
-        }
-        System.out.println();
-        System.out.println("Enter the value of K : ");
-        int k = scn.nextInt();
-        PairWithSum(head,k);
         
         // for(int val : arr){
         //     System.out.println(val);
