@@ -1,4 +1,6 @@
 
+
+
 public class countNumberSubString {
     public static void main(String[] args) {
         String str = "aacfssa";
@@ -6,7 +8,7 @@ public class countNumberSubString {
         int ans = countSubStrings(str, k);
         System.out.println("Total number of substring with k different char : "+ans);
     }
-    public static int countSubStrings(String str, int k) {
+    private static int countSubStrings(String str, int k) {
         int ans = 0;
         for(int i=0; i<str.length(); i++){
             int cnt = 0;
@@ -39,4 +41,5 @@ public class countNumberSubString {
         return cnt;
     }
     */
+    
 }
