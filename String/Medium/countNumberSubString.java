@@ -1,6 +1,4 @@
-
-
-
+/* 
 public class countNumberSubString {
     public static void main(String[] args) {
         String str = "aacfssa";
@@ -25,7 +23,7 @@ public class countNumberSubString {
         }
         return ans;
     }
-    /* 
+   
     public static int countSubStrings(String str, int k) {
         // Write your code here.
         int cnt = 0;
@@ -40,6 +38,6 @@ public class countNumberSubString {
         }
         return cnt;
     }
-    */
     
 }
+*/
