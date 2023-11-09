@@ -3,7 +3,9 @@ import java.util.*;
 public class sudokuSolve {
     public static void main(String[] args) {
         char[][]board = new char[9][9];
+        
         solveSudoku(board);
+        //return emplty
     }
     public static void solveSudoku(char[][] board){
         List<Integer>al = new ArrayList<>();
