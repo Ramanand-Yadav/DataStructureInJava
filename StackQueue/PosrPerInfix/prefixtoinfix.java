@@ -1,4 +1,4 @@
-package StackQueue.Monotonic;
+package StackQueue.PosrPerInfix;
 
 import java.util.Scanner;
 import java.util.Stack;
