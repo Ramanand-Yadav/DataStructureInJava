@@ -1,5 +1,4 @@
-
-
+/* 
 import java.util.Scanner;
 
 public class matrixcyclic{
@@ -83,3 +82,4 @@ public class matrixcyclic{
         return true;
     }
 }
+*/
