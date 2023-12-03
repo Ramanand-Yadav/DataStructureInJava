@@ -28,7 +28,7 @@ public class longestSubwithoutRep {
         }
         return ans;
     }
-    public int lengthOfLongestSubstring1(String s) {
+    public static int lengthOfLongestSubstring1(String s) {
         if(s.length() == 1 || s.length()==0){
             return s.length();
         }
