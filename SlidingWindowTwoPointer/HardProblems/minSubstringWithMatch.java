@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class minSubstringWithMatch {
     public static void main(String[] args) {
-        String s = "ADOBECODEBANC", t = "ABC";
+        String s = "abcdebdde", t = "bde";
         System.out.println(minWindow(s, t));
         System.out.println(minWindow1(s, t));
     }
