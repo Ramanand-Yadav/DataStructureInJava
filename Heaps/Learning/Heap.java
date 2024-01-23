@@ -61,7 +61,7 @@ class Heap<T extends Comparable<T>> {
         if(left<list.size() && list.get(min).compareTo(list.get(left))>0){
             min = left;
         }
-        if(right<list.size() && list.get(right).compareTo(list.get(right))>0){
+        if(right<list.size() && list.get(min).compareTo(list.get(right))>0){
             min = right;
         }
 
