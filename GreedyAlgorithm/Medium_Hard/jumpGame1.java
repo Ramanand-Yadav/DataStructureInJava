@@ -14,3 +14,4 @@ public class jumpGame1 {
         return ind==0?true:false;
     }
 }
+// testing comment
