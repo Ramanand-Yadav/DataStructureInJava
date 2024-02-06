@@ -1,4 +1,4 @@
-package GreedyAlgorithm.Medium_Hard;
+package GreedyAlgorithm.MediumHard;
 
 import java.util.*;
 import java.util.Comparator;
