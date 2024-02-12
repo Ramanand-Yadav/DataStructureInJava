@@ -1,10 +1,8 @@
 package BinaryTrees.Traversal;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class postOrder {
-    class TreeNode {
+    static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -17,8 +15,12 @@ public class postOrder {
         }
     }
     public static void main(String[] args) {
-        
+        TreeNode root = new TreeNode(6);
+        postorderTraversal(root);
+        postorderTraversal124(root);
     }
+    //using two stack
+    
     public static List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> al = new ArrayList<>();
         if(root==null)return al;
@@ -39,4 +41,32 @@ public class postOrder {
         }
         return al;
     }
+    
+    
+    //using 1 stack
+    public static List<Integer> postorderTraversal124(TreeNode root) {
+        List<Integer>list = new ArrayList<>();
+        if(root==null)return list;
+        Stack<TreeNode>st=new Stack<>();
+        while(root!=null||!st.isEmpty()){
+            if(root!=null){
+                st.push(root);
+                root=root.left;
+            }else{
+                TreeNode temp = st.peek().right;
+                if(temp==null){
+                    temp=st.peek();
+                    st.pop();
+                    list.add(temp.val);
+                    while(!st.isEmpty()&&temp==st.peek().right){
+                        temp=st.peek();
+                        st.pop();
+                        list.add(temp.val);
+                    }
+                }else{root=temp;}
+            }
+        }
+        return list;
+    }
+    
 }
