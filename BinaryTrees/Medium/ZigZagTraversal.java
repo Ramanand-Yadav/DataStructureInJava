@@ -7,9 +7,17 @@ import java.util.Queue;
 
 public class ZigZagTraversal {
     public static void main(String[] args) {
-        
+        TreeNode node = new TreeNode(6);
+        List<List<Integer>>ans = zigzagLevelOrder1(node);
+        for(List<Integer> al : ans){
+            for(int val : al){
+                System.out.println(val);
+            }
+        }
+
     }
-    public List<List<Integer>> zigzagLevelOrder1(TreeNode root) {
+    //zig zig traversal using queue
+    public static List<List<Integer>> zigzagLevelOrder1(TreeNode root) {
         List<List<Integer>>ans = new ArrayList<>();
         if(root==null)return ans;
         Queue<TreeNode>que = new LinkedList<>();
@@ -30,7 +38,8 @@ public class ZigZagTraversal {
         }
         return ans;
     }
-    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+    //zig zag using two linked list
+    public static List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>>ans=new ArrayList<>();
         if(root==null)return ans;
         List<TreeNode>trv=new ArrayList<>();
