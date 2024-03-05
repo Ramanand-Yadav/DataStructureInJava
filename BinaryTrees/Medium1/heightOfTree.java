@@ -1,8 +1,7 @@
-package BinaryTrees.Medium;
+package BinaryTrees.Medium1;
 
-
-public class balanceTree {
-
+// import java.util.*;
+public class heightOfTree {
     static class TreeNode {
         int val;
         TreeNode left;
@@ -21,11 +20,6 @@ public class balanceTree {
     }
     private static int dfs(TreeNode node){
         if(node==null)return 0;
-        int left = dfs(node.left);
-        if(left==-1)return -1;
-        int right = dfs(node.right);
-        if(right==-1)return -1;
-        if((Math.abs(left-right))>1)return -1;
-        return Math.max(left,right)+1;
+        return Math.max(dfs(node.left),dfs(node.right))+1;
     }
 }

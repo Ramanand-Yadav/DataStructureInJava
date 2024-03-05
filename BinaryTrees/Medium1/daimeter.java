@@ -1,4 +1,4 @@
-package BinaryTrees.Medium;
+package BinaryTrees.Medium1;
 
 public class daimeter {
     class TreeNode {

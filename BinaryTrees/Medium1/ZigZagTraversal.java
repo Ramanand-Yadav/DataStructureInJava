@@ -1,4 +1,4 @@
-package BinaryTrees.Medium;
+package BinaryTrees.Medium1;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

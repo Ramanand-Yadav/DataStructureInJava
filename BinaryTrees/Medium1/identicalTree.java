@@ -1,4 +1,4 @@
-package BinaryTrees.Medium;
+package BinaryTrees.Medium1;
 
 public class identicalTree {
     public static void main(String[] args) {
