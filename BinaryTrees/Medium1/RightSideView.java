@@ -1,23 +1,23 @@
 package BinaryTrees.Medium1;
 import java.util.*;
 public class RightSideView {
-    
+    static int maxLevel = 0;
     public static void main(String[] args) {
         
     }
-    public static List<Integer> rightSideTreeView(TreeNode node){
-        List<Integer>ans = new ArrayList<>();
-        if(node==null)return ans;
-        rightView(node,ans, 0, 1);
-        return ans;
+    public static List<Integer> rightSideView(TreeNode root) {
+        List<Integer> al = new ArrayList<>();
+        if(root==null) return al;
+        solve(root, al, 1);
+        return al;
     }
-    private static void rightView(TreeNode node,List<Integer>al, int level, int maxLevel){
-        if(node==null)return;
+    public static void solve(TreeNode root, List<Integer> al, int level){
+        if(root == null) return;
         if(maxLevel<level){
-            al.add(node.val);
+            al.add(root.val);
             maxLevel = level;
         }
-        rightView(node.left, al, level+1, maxLevel);
-        rightView(node.right, al, level+1, maxLevel);
+        solve(root.right, al, level+1);
+        solve(root.left, al, level+1); 
     }
 }
